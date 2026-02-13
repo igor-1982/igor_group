@@ -52,7 +52,7 @@
 ```bash
 conda create -n rest python=3.11 -c conda-forge
 conda activate rest
-conda install rest -c restgroup -c mokit/label/cf -c conda-forge
+conda install rest -c restgroup -c mokit -c conda-forge
 ```
 
 ### Docker Installation

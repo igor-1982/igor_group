@@ -1,8 +1,17 @@
-/* 调整主要内容区域的最大宽度 */
 :root {
-    --content-max-width: 1320px; /* 或 70% */
+    --content-max-width: 1320px;
 }
 
 .nav-chapters {
     display: none;
+}
+
+#language-switcher {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .language-switcher-label {
+        display: none;
+    }
 }

@@ -7,4 +7,4 @@ title = "igor group"
 [output.html]
 no-section-label = true
 additional-css = ["theme/custom.css"]
-
+additional-js = ["theme/language-switcher.js"]

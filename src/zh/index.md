@@ -1,17 +1,37 @@
 # 张颖（Igor Ying Zhang）
 
-**复旦大学教授 | 化学理论研究中心（RCCT）副主任**
-
-<div style="display: flex; align-items: center; margin-bottom: 2rem;">
-  <div style="flex: 0 0 auto; margin-right: 2rem;">
-    <img src="../photos/igor.jpg" alt="张颖" style="width: 180px; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+<div class="bio-card">
+  <div class="bio-photo">
+    <img src="../photos/igor.jpg" alt="张颖">
   </div>
-  <div style="flex: 1;">
-    <p>张颖教授获厦门大学与瑞典皇家理工学院（KTH）双博士学位，曾在德国马普学会弗里茨·哈伯研究所从事博士后研究，后成为独立课题组负责人。发表论文80余篇，出版国际上首部双杂化泛函专著《A New-Generation Density Functional》（Springer），获国家自然科学基金杰出青年科学基金和中国化学会理论化学青年奖。</p>
+  <div class="bio-text">
+    <div class="bio-subtitle">复旦大学教授 &middot; 化学理论研究中心（RCCT）副主任</div>
+    <p>2003年本科毕业于厦门大学，2010年和2011年分别于厦门大学化学系和瑞典皇家理工学院获得双博士学位。2012年依托德国马普学会Fritz-Haber研究所理论系开展博士后工作，并于2014年独立创建课题组任课题组长。2018年3月回国，就职复旦大学化学系，任教授。研究领域为理论与计算化学，在电子结构计算方法和程序的开发与应用方面做出系列原创性的工作。</p>
+    <div class="bio-meta">
+      <div>📑 主持海外高层次人才引进项目、基金委面上项目、基金委重大项目课题、国家杰出青年科学基金项目等</div>
+      <div>🏆 中国化学会唐敖庆理论化学青年奖（2018）、教育部自然科学一等奖（2019，排名第2）</div>
+      <div>📧 igor_zhangying@fudan.edu.cn</div>
+      <div>🌐 <a href="https://www.scholarmate.com/P/6VJf2q">ScholarMate 学术主页</a> &middot; <a href="https://orcid.org/0000-0002-8703-1912">ORCID</a></div>
+    </div>
   </div>
 </div>
 
 ---
+
+## 近期活动
+
+<div class="announcement-card">
+  <div class="announcement-card-header">
+    <span class="announcement-date">2026年5月</span>
+    <span class="announcement-tag">研讨会</span>
+  </div>
+  <h4><a href="../announcements/rest-workshop-2026.html">第三届REST程序研讨会 — 第一轮通知</a></h4>
+  <p>第三届REST程序研讨会拟于 <strong>2026年7月4日至5日</strong> 在上海举行。本次会议将聚焦表界面模拟、核心方法拓展及REST平台上机实训。</p>
+</div>
+
+---
+
+<div class="section">
 
 ## 研究方向
 
@@ -21,7 +41,11 @@
 - **交叉熵校正 MC-PDFT：** 提出广义杂化多组态对密度泛函方法，以CASSCF计算成本达到CASPT2精度。
 - **高性能软件：** 主导开发 **REST**，首个基于 Rust 语言的电子结构软件包。
 
+</div>
+
 ---
+
+<div class="section section-alt">
 
 ## 团队与项目
 
@@ -38,14 +62,22 @@
     <img src="../photos/rest_frame.jpg" alt="REST" style="height: 400px; width: auto; border-radius: 10px;">
   </div>
 
+</div>
+
 ---
+
+<div class="section">
 
 ## 联系方式
 
 **地址：** 上海市淞沪路2005号 复旦大学化学系  
 **邮箱：** igor_zhangying@fudan.edu.cn | **ORCID：** 0000-0002-8703-1912
 
+</div>
+
 ---
+
+<div class="section section-alt">
 
 ## 代表性论文
 
@@ -61,6 +93,8 @@
 10. Cai, S.; Weng, J.; Zhang, I. Y.; Zhu, Y. *JACS Au* **2025**, *5*, 4491.
 
 *完整列表： [Google Scholar](https://scholar.google.com/citations?user=LvJYWPwAAAAJ&hl=en) | [Scholarmate](https://www.scholarmate.com/psnweb/homepage/show?module=pub)*
+
+</div>
 
 ---
 

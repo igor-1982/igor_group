@@ -1,17 +1,37 @@
 # Igor Ying Zhang
 
-**Professor at Fudan University | Deputy Director, RCCT**
-
-<div style="display: flex; align-items: center; margin-bottom: 2rem;">
-  <div style="flex: 0 0 auto; margin-right: 2rem;">
-    <img src="../photos/igor.jpg" alt="Igor Ying Zhang" style="width: 180px; height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid #ddd;">
+<div class="bio-card">
+  <div class="bio-photo">
+    <img src="../photos/igor.jpg" alt="Igor Ying Zhang">
   </div>
-  <div style="flex: 1;">
-    <p>Prof. Igor Ying Zhang holds dual PhDs from Xiamen University and KTH (Sweden), did postdoctoral research at the Fritz Haber Institute (MPG, Germany), and became an independent group leader. He has authored 80+ papers, published the first monograph on doubly hybrid functionals (<em>A New-Generation Density Functional</em>, Springer), and received the NSFC Distinguished Young Scholar Award and the CCS Youth Award in Theoretical Chemistry.</p>
+  <div class="bio-text">
+    <div class="bio-subtitle">Professor at Fudan University &middot; Deputy Director, RCCT</div>
+    <p>Prof. Igor Ying Zhang received his B.S. from Xiamen University (2003) and dual Ph.D. degrees from Xiamen University (2010) and KTH Royal Institute of Technology, Sweden (2011). He conducted postdoctoral research at the Fritz Haber Institute of the Max Planck Society (2012–2014), where he established his independent research group. In 2018, he joined Fudan University as a Professor of Chemistry. His research focuses on theoretical and computational chemistry, with original contributions to the development and application of electronic structure methods and software. He has authored 80+ papers and published the first monograph on doubly hybrid functionals (<em>A New-Generation Density Functional</em>, Springer).</p>
+    <div class="bio-meta">
+      <div>📑 Grants: NSFC Distinguished Young Scholar, NSFC Major Program, Overseas High-Level Talent Program</div>
+      <div>🏆 Awards: CCS Tang Aoqing Youth Award in Theoretical Chemistry (2018), MOE Natural Science First Prize (2019)</div>
+      <div>📧 igor_zhangying@fudan.edu.cn</div>
+      <div>🌐 <a href="https://www.scholarmate.com/P/6VJf2q">ScholarMate Profile</a> &middot; <a href="https://orcid.org/0000-0002-8703-1912">ORCID</a></div>
+    </div>
   </div>
 </div>
 
 ---
+
+## Recent Activities
+
+<div class="announcement-card">
+  <div class="announcement-card-header">
+    <span class="announcement-date">May 2026</span>
+    <span class="announcement-tag">Workshop</span>
+  </div>
+  <h4><a href="../announcements/rest-workshop-2026.html">3rd REST Program Workshop — First Announcement</a></h4>
+  <p>The 3rd REST Program Workshop will be held on <strong>July 4–5, 2026</strong> in Shanghai. The workshop will focus on surface/interface simulations, new method extensions, and hands-on training with the REST platform.</p>
+</div>
+
+---
+
+<div class="section">
 
 ## Research Focus
 
@@ -21,7 +41,11 @@ Developing high-accuracy density functional theory methods and software for chal
 - **Cross-Entropy Corrected MC-PDFT:** A generalized hybrid multiconfiguration pair-density functional theory (HMC-PDFT) for strong correlation, delivering CASPT2-level accuracy at CASSCF cost.
 - **High-Performance Software:** Led the development of **REST**, the first Rust-based electronic structure package.
 
+</div>
+
 ---
+
+<div class="section section-alt">
 
 ## Team & Projects
 
@@ -38,14 +62,22 @@ Developing high-accuracy density functional theory methods and software for chal
     <img src="../photos/rest_frame.jpg" alt="REST" style="height: 400px; width: auto; border-radius: 10px;">
   </div>
 
+</div>
+
 ---
+
+<div class="section">
 
 ## Contact
 
 **Address:** Department of Chemistry, Fudan University, 2005 Songhu Road, Shanghai  
 **Email:** igor_zhangying@fudan.edu.cn | **ORCID:** 0000-0002-8703-1912
 
+</div>
+
 ---
+
+<div class="section section-alt">
 
 ## Selected Publications
 
@@ -61,6 +93,8 @@ Developing high-accuracy density functional theory methods and software for chal
 10. Cai, S.; Weng, J.; Zhang, I. Y.; Zhu, Y. *JACS Au* **2025**, *5*, 4491.
 
 *Full list: [Google Scholar](https://scholar.google.com/citations?user=LvJYWPwAAAAJ&hl=en) | [Scholarmate](https://www.scholarmate.com/psnweb/homepage/show?module=pub)*
+
+</div>
 
 ---
 

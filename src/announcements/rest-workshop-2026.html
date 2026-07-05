@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>第三届REST程序研讨会通知 | 简约科技风</title>
+    <style>
+        /* ---------- 简约科技风全局样式 ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f7fc;   /* 科技感的冷灰背景 */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            color: #1f2a3e;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        /* 主容器：类纸张容器，白色背景 + 细腻阴影，保留科技干净感 */
+        .paper {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            padding: 48px 56px;
+            transition: all 0.2s ease;
+        }
+
+        /* 响应式：移动端内边距缩小 */
+        @media (max-width: 680px) {
+            .paper {
+                padding: 28px 20px;
+            }
+        }
+
+        /* 标题体系：极简几何感 */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #0b2b44, #1f6392);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+            border-left: 5px solid #2d7ea0;
+            padding-left: 24px;
+            line-height: 1.2;
+        }
+
+        /* 副标题 / 日期地点 */
+        .subhead {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #4a6582;
+            margin-top: 0.25rem;
+            margin-bottom: 1.75rem;
+            padding-left: 29px;
+            border-bottom: 1px solid #e9edf2;
+            padding-bottom: 0.75rem;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-top: 2.2rem;
+            margin-bottom: 1rem;
+            color: #1a4b6e;
+            letter-spacing: -0.3px;
+            display: inline-block;
+            position: relative;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 3px;
+            background: #2d7ea0;
+            border-radius: 3px;
+            margin-top: 6px;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 1.6rem 0 0.8rem 0;
+            color: #2c5a7a;
+            border-left: 3px solid #7fb4cf;
+            padding-left: 14px;
+        }
+
+        /* 段落 */
+        p {
+            margin-bottom: 1rem;
+            color: #2c3e4e;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        /* 链接样式：科技感浅色线条 */
+        a {
+            color: #1f6e8c;
+            text-decoration: none;
+            border-bottom: 1px solid #bfd9e8;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        a:hover {
+            color: #0c4a62;
+            border-bottom-color: #0c4a62;
+        }
+
+        /* 列表样式 */
+        ul, ol {
+            margin: 0.75rem 0 1rem 1.8rem;
+        }
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        /* 强调会议特色框 (REST简介区域 - 科技灰蓝色块) */
+        .rest-highlight {
+            background: #f0f5fa;
+            border-radius: 20px;
+            padding: 1.5rem 1.8rem;
+            margin: 1.5rem 0;
+            border: 1px solid #e2edf3;
+            transition: all 0.2s;
+        }
+        .rest-highlight p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 验证卡片：能力验证区域特殊展示（科技感数据卡片） */
+        .validation-card {
+            background: #f8fafe;
+            border-radius: 24px;
+            padding: 1.4rem 1.8rem;
+            margin: 1.2rem 0 1.8rem 0;
+            border-left: 4px solid #2d7ea0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+        .validation-card p {
+            margin-bottom: 0.6rem;
+        }
+
+        /* 核心方法模块: 卡片式分组，展示拓展方向 */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0 1rem;
+        }
+        .tech-card {
+            background: #ffffff;
+            border-radius: 18px;
+            border: 1px solid #e2edf3;
+            padding: 1rem 1.2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: transform 0.1s ease, box-shadow 0.2s;
+        }
+        .tech-card strong {
+            color: #1f6392;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+        .tech-card p {
+            margin: 0.3rem 0 0;
+            font-size: 0.92rem;
+        }
+
+        /* 议程卡片 : 双日时间线风格 */
+        .agenda-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+        .agenda-day {
+            flex: 1;
+            min-width: 240px;
+            background: #fafcff;
+            border-radius: 20px;
+            border: 1px solid #eef2f8;
+            padding: 1.2rem 1.4rem;
+            transition: all 0.2s;
+        }
+        .agenda-day h4 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #236b8e;
+            margin-bottom: 1rem;
+            border-left: 3px solid #2d7ea0;
+            padding-left: 12px;
+        }
+        .agenda-day ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+        .agenda-day li {
+            margin: 0.65rem 0;
+        }
+
+        /* 表格风格 (地址/联系人等无表格，但保留表格样式以备扩展) */
+        .info-line {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .info-label {
+            font-weight: 700;
+            width: 110px;
+            color: #1f6392;
+        }
+        .info-detail {
+            flex: 1;
+            color: #2c3e4e;
+        }
+
+        /* 会议组织 & 联系人双栏布局 */
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1.2rem 0 0.5rem;
+        }
+        .contact-col {
+            flex: 1;
+            min-width: 200px;
+            background: #f9fbfd;
+            border-radius: 20px;
+            padding: 1rem 1.2rem;
+        }
+        .contact-col h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #175d7c;
+            margin-bottom: 0.75rem;
+        }
+        .contact-item {
+            margin: 0.5rem 0;
+            font-size: 0.92rem;
+            line-height: 1.4;
+        }
+
+        /* 注册信息醒目卡片 */
+        .reg-card {
+            background: linear-gradient(105deg, #eef3fc 0%, #ffffff 100%);
+            border-left: 6px solid #2d7ea0;
+            border-radius: 16px;
+            padding: 1rem 1.6rem;
+            margin: 1.5rem 0;
+        }
+
+        /* 引用、注释风格 */
+        blockquote {
+            font-style: normal;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            border-left: 4px solid #85b8d4;
+            margin: 1rem 0;
+            color: #345e7e;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            margin: 1.8rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, #cbdde9, transparent);
+        }
+        /* 底部简单版权 */
+        .footer-note {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #8ba0b2;
+            border-top: 1px solid #eef2f8;
+            padding-top: 1.5rem;
+        }
+        /* 修饰链接邮箱 */
+        .email-link {
+            font-family: monospace;
+            font-weight: 500;
+        }
+        /* 列表层级调整 */
+        ul ul {
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        /* 内联数学公式样式保持干净 */
+        math, .math-inline {
+            font-family: monospace;
+            background: #f3f6fc;
+            padding: 0 2px;
+            border-radius: 6px;
+        }
+        strong {
+            color: #1a4b6e;
+        }
+    </style>
+</head>
+<body>
+<div class="paper">
+    <!-- 主标题 -->
+    <h1>第三届REST程序研讨会通知<br><span style="font-size: 1.2rem; font-weight: 400;">（第一轮）</span></h1>
+    <div class="subhead">📅 2026年7月4日 – 5日 · 上海</div>
+
+    <!-- REST简介块：包含简介及能力验证部分（新增验证内容） -->
+    <div class="rest-highlight">
+        <p><strong>🔬 REST程序简介</strong><br>
+        <a href="https://mp.weixin.qq.com/s/muzYYPwVSTA2Bw8vCMofVw" target="_blank" rel="noopener">REST（Rust-based Electronic Structure Toolkit）</a> 是由复旦大学化学理论研究中心开发的新一代电子结构计算平台，在
+        <a href="https://xdft.fudan.edu.cn/main.htm" target="_blank">徐昕教授</a> 领导下，由
+        <a href="https://igor-group.readthedocs.io/en/latest/zh/index.html" target="_blank">张颖教授</a> 担任首席开发者完成。基于Rust语言构建，拥有独特的架构设计和强大的计算能力，致力于推动量子力学和材料科学的前沿计算研究，适用于从催化研究（如Cu团簇CO吸附）到先进电子结构建模等多种场景，确保数值稳定性、精确性和并行计算效率。<br>
+        REST核心特性涵盖高性能基组运算、主流密度泛函方法（LDA、(meta)-GGA和杂化泛函）、第五阶高精度DFT方法（XYG3/XYGJ-OS/xDH-PBE0/ZRPS等双杂化泛函及RPA方法）、机器学习增强型双杂化泛函（DL-xDH23和R-xDH7-SCC）、激发态性质计算方法（ΔSCF、TDDFT、GW和BSE等），以及PyREST交互工作流。程序源代码及相关资源可通过官方Gitee仓库获取：<a href="https://gitee.com/restgroup">https://gitee.com/restgroup</a>。</p>
+        
+        <!-- 新增 过去一年REST平台能力验证 区域 (独立科技卡片) -->
+        <div class="validation-card">
+            <strong style="font-size:1.05rem; display:block; margin-bottom:8px;">📊 过去一年REST平台能力验证</strong>
+            <p>过去一年，REST程序在多类型复杂体系的千原子级规模计算中展现了优异的数值稳定性与可重复性。依托Rust语言的内存安全与并行调度特性，REST顺利完成了包括<a href="https://mp.weixin.qq.com/s/7bLXPcRdiRx1S0IxzB-12g" target="_blank">主族分子</a>、<a href="https://mp.weixin.qq.com/s/f1MTrKcOZvciVXAo_eNiVg" target="_blank">过渡金属配合物</a>、<a href="https://mp.weixin.qq.com/s/IHCWzqWjWTP4b98GRuoY1g" target="_blank">MOF材料</a>及<a href="https://mp.weixin.qq.com/s/TA8TaZTMbbSJynYEUWK2IQ" target="_blank">表界面模型</a>在内的逾两万次单点能与结构优化任务，计算结果与参考值的偏差控制在化学精度以内。与此同时，灵活的模块化设计极大提升了新功能的开发效率——从范围分离泛函方法、X2C相对论框架、杂化解析频率算法到TDDFT、BSE等激发态计算功能，均完成从原型到稳定版本的落地，并支持高效的自动化测试与持续集成。这些实践表明，REST已具备支撑<strong>高通量筛选与AI训练数据生产</strong>的基础设施能力。</p>
+        </div>
+        
+        <p style="margin-top: 0.5rem;">✨ 继第二届研讨会成功举办之后，第三届REST程序研讨会拟于 <strong>2026年7月4日至5日</strong> 在上海市举行。本届会议将进一步展示REST平台在<strong>表界面反应与性质模拟</strong>方向的最新进展，并系统介绍程序在理论方法、相对论效应、激发态计算及溶剂模型等领域的实质性拓展。</p>
+        <p>欢迎各位从事计算化学、催化、材料设计与量子化学程序开发的同行踊跃参与。</p>
+    </div>
+
+    <!-- 一、会议主旨与主要拓展方向 -->
+    <h2>一、会议主旨与主要拓展方向</h2>
+    <p>第二届研讨会已系统展示了REST的基础使用、多级别DFT方法及复杂体系实战案例。在此基础上，第三届研讨会将聚焦以下<strong>核心技术升级与应用场景拓展</strong>：</p>
+
+    <h3>1. 聚焦表界面反应与性质模拟</h3>
+    <p>本届会议将围绕表面分子量子态调控、范德华效应、针尖增强拉曼散射（TERS）成像、物理/化学吸附、主客体相互作用等表界面核心问题，通过邀请报告与上机案例，展示REST在真实表界面体系中的计算能力。</p>
+
+    <h3>2. 核心方法拓展</h3>
+    <div class="tech-grid">
+        <div class="tech-card"><strong>🔹 范围分离泛函</strong><p>实现CAM-B3LYP, ωB97X-D等常用范围分离泛函的能量和构型优化功能。</p></div>
+        <div class="tech-card"><strong>🔹 自定义泛函接口</strong><p>高度灵活的泛函定义框架，用户可便捷调用现有泛函库或开发自定义泛函。</p></div>
+        <div class="tech-card"><strong>🔹 杂化泛函解析频率</strong><p>规避数值求解，大幅提升过渡态搜索、自由能计算、谱学模拟效率。</p></div>
+        <div class="tech-card"><strong>🔹 TDDFT、GW与BSE高效模拟</strong><p>支持激发态、光吸收光谱及激子束缚能计算。</p></div>
+        <div class="tech-card"><strong>🔹 PCM隐式溶剂化模型</strong><p>实现溶液环境下的能量与梯度计算。</p></div>
+        <div class="tech-card"><strong>🔹 QM/MM计算功能</strong><p>与OpenMM结合，实现高效QM/MM计算功能。</p></div>
+        <div class="tech-card"><strong>🔹 基于AIMD的红外光谱计算</strong><p>与ASE-MD结合，考虑非谐效应对红外光谱的影响。</p></div>
+        <div class="tech-card"><strong>🔹 X2C相对论计算</strong><p>实现Spin-Free X2C框架（标量相对论效应），重金属及稀土络合体系描述。</p></div>
+        <div class="tech-card"><strong>🔹 REST智能体初步搭建</strong><p>结合大语言模型（LLM），实现输入卡自动生成、任务提交、结果自动分析及计算数据库持续构建。</p></div>
+    </div>
+
+    <h3>3. 持续深耕：自研双杂化泛函系列</h3>
+    <p>REST程序的核心特色之一，是持续拓展自研双杂化密度泛函系列在复杂体系中的高效应用。该类方法在保持双杂化精度的同时，通过<strong>eXtended Oniom (XO)低标度策略</strong>大幅降低计算标度，目前已成功用于分子筛、MOF、表界面吸附及主客体体系。本届会议将展示，借助上述核心方法拓展（如解析频率计算、TDDFT、GW/BSE、PCM溶剂化模型及X2C相对论方法等），双杂化泛函的应用可进一步延伸至更广泛的场景，从而为人工智能驱动的精准化学研究提供高精度、高一致性的训练数据与验证基准。</p>
+
+    <!-- 二、初步议程概览 -->
+    <h2>二、初步议程概览 <span style="font-size: 0.9rem; font-weight: normal;">（第二轮通知详定）</span></h2>
+    <div class="agenda-wrapper">
+        <div class="agenda-day">
+            <h4>📆 7月4日 (周五)</h4>
+            <ul>
+                <li>开幕致辞 & REST 2026-01版本发布</li>
+                <li>邀请报告（表界面调控、范德华效应、双杂化方法等）</li>
+                <li>上机实操（软件安装、从LDA到双杂化方法、新功能体验：X2C相对论、解析频率、TDDFT/GW/BSE、PCM）</li>
+                <li>AI开发者平台演示（含REST智能体工作流）</li>
+            </ul>
+        </div>
+        <div class="agenda-day">
+            <h4>📆 7月5日 (周六)</h4>
+            <ul>
+                <li>邀请报告（多尺度模拟、TERS成像）</li>
+                <li>应用实战（QM/MM、TERS成像、主客体相互作用、吸附模拟、高精度STM/EST成像）</li>
+                <li>闭幕总结</li>
+            </ul>
+        </div>
+    </div>
+    <blockquote>📌 完整日程（含报告人、具体时间与上机案例题目）将在第二轮通知中公布。</blockquote>
+
+    <!-- 三、会议时间与地点 -->
+    <h2>三、会议时间与地点</h2>
+    <div class="info-line"><span class="info-label">⏰ 时间</span><span class="info-detail">2026年7月4日–5日（7月3日下午报到）</span></div>
+    <div class="info-line"><span class="info-label">📍 地点</span><span class="info-detail">上海市宝山德尔塔酒店（宝山区双庆路220号）</span></div>
+
+    <!-- 四、会议注册 (增加会议网站及提前注册说明) -->
+    <h2>四、会议注册</h2>
+    <div class="reg-card">
+        <p>📝 请参会代表填写会议回执单，于 <strong>2026年6月15日</strong> 前发送至会议联系人。<br>
+        💰 注册费：<strong>500元/人</strong>（含资料费、7月4–5日午餐及晚餐）。<br>
+        📄 缴费方式及发票事宜详见第二轮通知。<br>
+        🌐 <strong>会议网站（包含注册通道）将于近期开放。</strong> 如需提前咨询或注册，请联系 <a href="mailto:rulinfen@fudan.edu.cn">冯儒林</a>、<a href="mailto:wjyan@fudan.edu.cn">颜文杰</a>。</p>
+    </div>
+
+    <!-- 五、会议组织委员会 -->
+    <h2>五、会议组织委员会</h2>
+    <p><strong>主席：</strong> 张颖、徐昕 &emsp;|&emsp; <strong>秘书：</strong> 颜文杰、冯儒林、陈莉、杨露</p>
+
+    <!-- 六、会议联系人 双栏精致展示 -->
+    <h2>六、会议联系人</h2>
+    <div class="contact-row">
+        <div class="contact-col">
+            <h4>📧 注册与缴费</h4>
+            <div class="contact-item">冯儒林 <a href="mailto:rulinfen@fudan.edu.cn" class="email-link">rulinfen@fudan.edu.cn</a> ｜ 18116050532</div>
+            <div class="contact-item">颜文杰 <a href="mailto:wjyan@fudan.edu.cn" class="email-link">wjyan@fudan.edu.cn</a> ｜ 13671929027</div>
+        </div>
+        <div class="contact-col">
+            <h4>🏨 会务与住宿</h4>
+            <div class="contact-item">陈莉 <a href="mailto:chenli_@fudan.edu.cn">chenli_@fudan.edu.cn</a> ｜ 16602100427</div>
+            <h4 style="margin-top: 0.8rem;">📑 发票与报销</h4>
+            <div class="contact-item">杨露 <a href="mailto:yanlu@fudan.edu.cn">yanlu@fudan.edu.cn</a> ｜ 15618153915</div>
+        </div>
+    </div>
+
+    <!-- 七、主办单位 -->
+    <h2>七、主办单位</h2>
+    <p>复旦大学化学理论中心 &nbsp;|&nbsp; 复旦大学化学系</p>
+
+    <!-- 附录 / 装饰性分割线 便于word归档 -->
+    <hr>
+    <div class="footer-note">
+        第三届REST程序研讨会 · 期待与您相聚上海<br>
+        会议信息持续更新，敬请关注 REST 官方 Gitee 及后续通知
+    </div>
+</div>
+</body>
+</html>

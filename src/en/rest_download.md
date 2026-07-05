@@ -1,8 +1,6 @@
-# REST Container Downloads
+# REST Downloads
 
 [← Back to Homepage](./index.md)
-
-**Workshop Edition — November 2025**
 
 ---
 
@@ -14,50 +12,57 @@
 
 ---
 
-## Current Version: v2025.01
+## Install
 
-| Item | Detail |
-|------|--------|
-| **Version** | 2025.01 (Workshop Edition) |
-| **Release Date** | Nov 28, 2025 |
-| **Storage** | Alibaba Cloud OSS |
+### Conda Install
 
----
-
-## Downloads
-
-### Docker Container Image
-- **File:** `rest_2025.01.tar.gz` (~1.6 GB)
-- **Download:** [rest_2025.01.tar.gz](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/docker/rest_2025.01.tar.gz)
-
-### Apptainer/Singularity Image
-- **File:** `rest_2025.01.sif` (~1.6 GB)
-- **Download:** [rest_2025.01.sif](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/apptainer/rest_2025.01.sif)
-
-### Conda
 [![Conda](https://anaconda.org/restgroup/rest/badges/latest_release_date.svg)](https://anaconda.org/restgroup/rest)
 
----
-
-## Quick Install
-
-### Conda
 ```bash
 conda create -n rest python=3.11 -c conda-forge
 conda activate rest
 conda install rest -c restgroup -c mokit -c conda-forge
 ```
 
-### Docker
+### Ready Image
+
+#### Current Version: v2026.01
+
+| Item | Detail |
+|---|---|
+| **Version** | 2026.01 (3rd REST Workshop Edition) |
+| **Release Date** | July 4, 2026 |
+| **Docker Image** | `rest_2026.01.tar.xz` (~700 MB) — [Download](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/docker/rest_workshop_remote_260702.tar.xz) |
+| **Apptainer/Singularity Image** | `rest_2026.01.sif` (~700 MB) — [Download](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/apptainer/rest_workshop_remote_260704.sif) |
+
+#### Historical Versions
+
+**v2025.01 (2nd REST Workshop Edition)**
+
+- **Docker:** `rest_2025.01.tar.gz` (~1.6 GB) — [Download](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/docker/rest_2025.01.tar.gz)
+- **Apptainer/Singularity:** `rest_2025.01.sif` (~1.6 GB) — [Download](https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/apptainer/rest_2025.01.sif)
+
+---
+
+## Quick Install
+
+#### Conda
 ```bash
-wget -O rest_2025.01.tar.gz "https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/docker/rest_2025.01.tar.gz"
-docker load < rest_2025.01.tar.gz
+conda create -n rest python=3.11 -c conda-forge
+conda activate rest
+conda install rest -c restgroup -c mokit -c conda-forge
 ```
 
-### Apptainer/Singularity
+#### Docker
 ```bash
-wget -O rest_2025.01.sif "https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/apptainer/rest_2025.01.sif"
-singularity exec rest_2025.01.sif rest --version
+wget -O rest_2026.01.tar.xz "https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/docker/rest_workshop_remote_260702.tar.xz"
+docker load < rest_2026.01.tar.xz
+```
+
+#### Apptainer/Singularity
+```bash
+wget -O rest_2026.01.sif "https://rest-package-image.oss-cn-hangzhou.aliyuncs.com/apptainer/rest_workshop_remote_260704.sif"
+singularity exec rest_2026.01.sif rest --version
 ```
 
 ---
